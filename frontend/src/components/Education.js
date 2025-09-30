@@ -33,11 +33,11 @@ const Education = ({ data }) => {
   }, []);
 
   return (
-    <section id="education" className="py-24 bg-white">
+    <section id="education" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         <div 
           ref={sectionRef}
-          className="text-center mb-16 section-reveal"
+          className="text-center mb-12 section-reveal"
         >
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
             Education
