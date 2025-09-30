@@ -33,12 +33,9 @@ const Education = ({ data }) => {
   }, []);
 
   return (
-    <section id="education" className="py-20 bg-white">
+    <section id="education" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-6">
-        <div 
-          ref={sectionRef}
-          className="text-center mb-12 section-reveal"
-        >
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
             Education
           </h2>
