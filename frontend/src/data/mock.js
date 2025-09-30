@@ -10,7 +10,31 @@ export const mockData = {
   },
   
   summary: {
-    text: "Experienced backend developer with a proven track record in building scalable ERP modules and integrating REST APIs to optimize inventory and transaction systems. Developed microservices that enhance data consistency and improve system performance in agile environments. Leverages robust skills in Python and Java to deliver clean, efficient code and streamlined database management for high-volume applications."
+    text: "Experienced backend developer with a proven track record in building scalable ERP modules and integrating REST APIs to optimize inventory and transaction systems. Developed microservices that enhance data consistency and improve system performance in agile environments. Leverages robust skills in Python and Java to deliver clean, efficient code and streamlined database management for high-volume applications.",
+    highlights: [
+      {
+        title: "Backend Expertise",
+        description: "Specialized in Python and Java backend development with extensive experience in microservices architecture and REST API design."
+      },
+      {
+        title: "ERP & Systems Integration",
+        description: "Successfully engineered custom Odoo ERP modules, reducing manual data entry by 40% and improving operational efficiency."
+      },
+      {
+        title: "Performance Optimization", 
+        description: "Optimized database queries and system architecture, achieving 25% faster transaction speeds and 15% latency reduction."
+      },
+      {
+        title: "DevOps & CI/CD",
+        description: "Implemented automated deployment pipelines with Docker and GitHub Actions, reducing deployment times from hours to minutes."
+      }
+    ],
+    stats: [
+      { label: "Years of Experience", value: "4+" },
+      { label: "Code Coverage Achieved", value: "95%" },
+      { label: "Performance Improvement", value: "40%" },
+      { label: "Projects Delivered", value: "15+" }
+    ]
   },
   
   skills: {
