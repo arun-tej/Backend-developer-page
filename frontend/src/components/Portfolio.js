@@ -3,6 +3,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
 import Experience from "./Experience";
 import Education from "./Education";
 import Contact from "./Contact";
@@ -35,6 +36,7 @@ const Portfolio = () => {
         <Hero data={data.personal} />
         <About data={data.summary} />
         <Skills data={data.skills} />
+        <Projects data={data.projects} />
         <Experience data={data.experience} />
         <Education data={data.education} />
         <Contact data={data.contact} />
