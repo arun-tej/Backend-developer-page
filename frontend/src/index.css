@@ -84,3 +84,14 @@ code {
     @apply bg-background text-foreground;
     }
 }
+
+/* Hide any watermarks or system branding */
+[style*="position: fixed"][style*="bottom"][style*="right"],
+.watermark,
+.emergent-watermark,
+[class*="watermark"],
+[id*="watermark"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
