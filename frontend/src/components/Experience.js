@@ -34,12 +34,9 @@ const Experience = ({ data }) => {
   }, []);
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
-        <div 
-          ref={sectionRef}
-          className="text-center mb-12 section-reveal"
-        >
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
             Experience
           </h2>
