@@ -41,11 +41,11 @@ const About = ({ data }) => {
   };
 
   return (
-    <section id="about" className="py-24 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div 
           ref={sectionRef}
-          className="text-center mb-16 section-reveal"
+          className="text-center mb-12 section-reveal"
         >
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
             About
@@ -54,14 +54,14 @@ const About = ({ data }) => {
         </div>
         
         {/* Main Description */}
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-xl leading-relaxed text-gray-700 font-light section-reveal">
             {data.text}
           </p>
         </div>
 
         {/* Key Highlights */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {data.highlights.map((highlight, index) => {
             const IconComponent = iconMap[highlight.title];
             return (
@@ -70,16 +70,16 @@ const About = ({ data }) => {
                 ref={el => cardsRef.current[index] = el}
                 className="border-0 shadow-sm hover:shadow-md transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1) apple-hover-lift section-reveal text-center"
               >
-                <CardHeader className="pb-4">
-                  <div className="mx-auto p-3 bg-gray-100 rounded-full mb-4 w-fit">
+                <CardHeader className="pb-3">
+                  <div className="mx-auto p-3 bg-gray-100 rounded-full mb-3 w-fit">
                     <IconComponent className="w-6 h-6 text-gray-700" />
                   </div>
                   <CardTitle className="text-lg font-medium text-gray-900">
                     {highlight.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600 leading-relaxed">
+                <CardContent className="pt-0">
+                  <CardDescription className="text-gray-600 leading-relaxed text-sm">
                     {highlight.description}
                   </CardDescription>
                 </CardContent>
