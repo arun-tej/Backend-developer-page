@@ -32,11 +32,11 @@ const Contact = ({ data }) => {
   }, []);
 
   return (
-    <section id="contact" className="py-24 bg-gray-900">
+    <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-4xl mx-auto px-6">
         <div 
           ref={sectionRef}
-          className="text-center mb-16 section-reveal"
+          className="text-center mb-12 section-reveal"
         >
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
             Get In Touch
