@@ -85,13 +85,37 @@ code {
     }
 }
 
-/* Hide any watermarks or system branding */
+/* Hide any watermarks, branding, or system tags - comprehensive removal */
 [style*="position: fixed"][style*="bottom"][style*="right"],
+[style*="position: absolute"][style*="bottom"][style*="right"],
 .watermark,
 .emergent-watermark,
+.made-with,
 [class*="watermark"],
-[id*="watermark"] {
+[class*="made-with"],
+[class*="emergent"],
+[id*="watermark"],
+[id*="emergent"],
+[data-emergent],
+[data-watermark],
+div[style*="bottom"][style*="right"][style*="position"],
+span[style*="bottom"][style*="right"],
+a[href*="emergent"],
+*[class*="brand"],
+*[id*="brand"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Remove any iframe or embedded content that might contain branding */
+iframe[src*="emergent"],
+embed[src*="emergent"],
+object[data*="emergent"] {
+  display: none !important;
 }
