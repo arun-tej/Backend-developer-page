@@ -37,6 +37,89 @@ export const mockData = {
     ]
   },
   
+  projects: {
+    featured: [
+      {
+        name: "inventory-management-system",
+        description: "Scalable ERP inventory management system built with Python and FastAPI. Features real-time stock tracking, automated procurement workflows, and PostgreSQL optimization.",
+        language: "Python",
+        languageColor: "#3776ab",
+        stars: 34,
+        forks: 12,
+        topics: ["python", "fastapi", "postgresql", "erp", "inventory"],
+        createdAt: "2024-03-15",
+        updatedAt: "2025-01-15",
+        homepage: null,
+        url: "https://github.com/arun-tej/inventory-management-system"
+      },
+      {
+        name: "microservices-order-processor",
+        description: "High-performance microservices architecture for order processing with Docker containerization, message queues, and comprehensive monitoring.",
+        language: "Java",
+        languageColor: "#b07219",
+        stars: 28,
+        forks: 8,
+        topics: ["java", "microservices", "docker", "rabbitmq", "spring-boot"],
+        createdAt: "2024-01-10",
+        updatedAt: "2024-12-20",
+        homepage: null,
+        url: "https://github.com/arun-tej/microservices-order-processor"
+      },
+      {
+        name: "rest-api-performance-optimizer",
+        description: "Advanced REST API optimization toolkit with caching strategies, database indexing, and performance monitoring. Achieved 60% latency reduction.",
+        language: "Python",
+        languageColor: "#3776ab",
+        stars: 42,
+        forks: 15,
+        topics: ["python", "fastapi", "redis", "postgresql", "performance"],
+        createdAt: "2023-09-05",
+        updatedAt: "2024-11-30",
+        homepage: "https://api-optimizer-demo.herokuapp.com",
+        url: "https://github.com/arun-tej/rest-api-performance-optimizer"
+      },
+      {
+        name: "ci-cd-pipeline-automation",
+        description: "Comprehensive CI/CD pipeline automation using GitHub Actions and Docker. Features automated testing, deployment, and rollback capabilities.",
+        language: "Shell",
+        languageColor: "#89e051",
+        stars: 19,
+        forks: 6,
+        topics: ["github-actions", "docker", "cicd", "automation", "deployment"],
+        createdAt: "2024-02-20",
+        updatedAt: "2024-12-10",
+        homepage: null,
+        url: "https://github.com/arun-tej/ci-cd-pipeline-automation"
+      },
+      {
+        name: "database-migration-toolkit",
+        description: "Enterprise-grade database migration and schema management toolkit with rollback support and data integrity validation.",
+        language: "Java",
+        languageColor: "#b07219",
+        stars: 23,
+        forks: 9,
+        topics: ["java", "database", "migration", "postgresql", "mysql"],
+        createdAt: "2023-11-12",
+        updatedAt: "2024-10-15",
+        homepage: null,
+        url: "https://github.com/arun-tej/database-migration-toolkit"
+      },
+      {
+        name: "monitoring-dashboard",
+        description: "Real-time system monitoring dashboard with Grafana integration, custom metrics, and alerting system for microservices architecture.",
+        language: "Python",
+        languageColor: "#3776ab",
+        stars: 31,
+        forks: 11,
+        topics: ["python", "grafana", "prometheus", "monitoring", "dashboard"],
+        createdAt: "2024-04-08",
+        updatedAt: "2024-12-25",
+        homepage: "https://monitoring-demo.netlify.app",
+        url: "https://github.com/arun-tej/monitoring-dashboard"
+      }
+    ]
+  },
+  
   skills: {
     categories: [
       {
