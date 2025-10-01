@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
       "src": "package.json",
@@ -15,5 +16,8 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "npm run vercel-build"
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "build",
+  "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
+  "nodeVersion": "20.x"
 }

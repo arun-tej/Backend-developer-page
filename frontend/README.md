@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Frontend Deployment Guide
+# Backend Developer Page - Frontend
 
 This React application uses Create React App with CRACO for customization.
 
@@ -11,8 +7,9 @@ This React application uses Create React App with CRACO for customization.
 The application is configured for deployment to Vercel with the following settings:
 
 1. Uses `--legacy-peer-deps` flag to handle dependency conflicts
-2. Custom build command specified in `vercel.json`
-3. Resolution overrides in `package.json` to fix version conflicts
+2. Explicitly installs compatible versions of `ajv` and `ajv-keywords`
+3. Custom build command specified in `vercel.json`
+4. Resolution overrides in `package.json` to fix version conflicts
 
 ## Environment Variables
 
@@ -33,4 +30,4 @@ Builds the app for production to the `build` folder.
 
 ### `npm run vercel-build`
 
-Special build command for Vercel deployment that handles dependency conflicts.
+Special build command for Vercel deployment that handles dependency conflicts and installs specific versions of ajv packages.
